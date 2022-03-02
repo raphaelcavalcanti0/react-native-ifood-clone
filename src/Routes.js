@@ -5,10 +5,14 @@ import Home from "./pages/Home/Home";
 
 const Stack = createNativeStackNavigator();
 
+const screenOptions = {
+    headerShown: false
+}
+
 const Routes = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
                 <Stack.Screen name="Home" component={Home} />
             </Stack.Navigator>
         </NavigationContainer>
