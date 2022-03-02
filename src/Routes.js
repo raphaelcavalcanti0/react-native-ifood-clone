@@ -15,7 +15,8 @@ const Routes = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
-                <Stack.Screen name="Home" component={Main} />
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Main" component={Main} />
             </Stack.Navigator>
         </NavigationContainer>
     )
